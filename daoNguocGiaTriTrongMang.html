@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [-1, 2,3,5,7,8,1];
+    let First = 0;
+    let last = arr.length - 1;
+    // // cach goi ham dao nguoc vi tri trong mang
+    // document.write(i.reverse(x));
+    while (First < last){
+        let b = arr[First];
+        arr[First] = arr[last];
+        arr[last] = b;
+        First++;
+        last--;
+    }
+    // while (first < last) {
+    //     let b = x[first];
+    //     x[first = x[last];
+    //     x[last] = b;
+    //     first++;
+    //     last--;
+    // }
+    document.write(arr);
+
+</script>
+
+</body>
+</html>
